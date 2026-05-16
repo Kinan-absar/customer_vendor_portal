@@ -44,10 +44,7 @@ Features:
             # future CSS/JS for bilingual UI improvements
         ],
     },
-    'images': ['images/main_screenshot.png'],
     'installable': True,
     'application': False,
-    'license': 'OPL-1',
-    'price': 34.99,
-    'currency': 'USD',
+    'license': 'LGPL-3',
 }
