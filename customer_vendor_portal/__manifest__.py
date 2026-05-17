@@ -49,7 +49,8 @@ Features:
             # future CSS/JS for bilingual UI improvements
         ],
     },
+    "images": ["images/main_screenshot.png"],
     'installable': True,
     'application': False,
-    'license': 'LGPL-3',
+    
 }
