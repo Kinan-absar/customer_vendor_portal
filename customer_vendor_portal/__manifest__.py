@@ -5,6 +5,11 @@
     'author': 'Kinan',
     'website': 'https://absar-alomran.com',
     'category': 'Portal',
+    "author": "Kinan",
+    "website": "https://absar-alomran.com",
+    "license": "OPL-1",
+    "price": 24.99,
+    "currency": "USD",
     'summary': 'Enhanced customer portal and new vendor portal with invoice upload, PO access, and financial data.',
     'description': """
 Customer & Vendor Portal Extension
