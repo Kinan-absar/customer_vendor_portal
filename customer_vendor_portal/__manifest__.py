@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Customer & Vendor Portal Extension',
-    'version': '1.0.0',
+    'version': '2.0.0',
     'author': 'Kinan',
     'website': 'https://absar-alomran.com',
     'category': 'Portal',
@@ -46,7 +46,7 @@ Features:
     ],
     'assets': {
         'web.assets_frontend': [
-            # future CSS/JS for bilingual UI improvements
+            'customer_vendor_portal/static/src/css/vendor_portal.css',
         ],
     },
     "images": ["images/main_screenshot.png"],
