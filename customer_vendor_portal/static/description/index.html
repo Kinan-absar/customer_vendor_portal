@@ -1,27 +1,68 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<style>
-  .app-wrap{max-width:1100px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#252a34;line-height:1.65}
-  .hero{padding:52px 32px;border-radius:18px;background:linear-gradient(135deg,#f5f2f7,#eef5f6);text-align:center;margin:20px 0 30px}
-  .hero h1{font-size:40px;margin:0 0 12px;color:#3b2943}.hero p{font-size:19px;max-width:820px;margin:0 auto;color:#52606d}
-  .badges{margin-top:20px}.badge{display:inline-block;margin:4px;padding:7px 12px;border-radius:20px;background:#714b67;color:#fff;font-size:13px;font-weight:700}
-  .section{padding:26px 8px}.section h2{text-align:center;font-size:29px;color:#3b2943;margin:0 0 18px}.lead{text-align:center;max-width:850px;margin:0 auto 26px;color:#56606b}
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{border:1px solid #e5e7eb;border-radius:14px;padding:20px;background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.05)}
-  .card h3{font-size:18px;margin:0 0 8px;color:#714b67}.card p{margin:0;color:#4b5563}.shot{margin:22px auto;text-align:center}.shot img{max-width:100%;border:1px solid #ddd;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
-  .flow{padding:22px;border-radius:14px;background:#f8fafc;text-align:center;font-weight:700;color:#3b2943;margin:16px 0}.note{padding:18px 20px;border-left:4px solid #714b67;background:#faf7fb;border-radius:8px;margin:18px 0}
-  .footer{text-align:center;padding:30px 10px;color:#6b7280;border-top:1px solid #e5e7eb;margin-top:30px}
-  @media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:31px}.hero{padding:34px 18px}}
-</style>
-</head><body><div class='app-wrap'>
-<div class='hero'><h1>Customer & Vendor Portal Extension</h1><p>A practical vendor-facing portal for Purchase Order visibility, invoice submission, review status and account onboarding without backend access.</p><div class='badges'><span class='badge'>Vendor Portal</span><span class='badge'>Purchase Orders</span><span class='badge'>Invoice Upload</span><span class='badge'>Review Workflow</span><span class='badge'>Portal Security</span></div></div>
-<section class='section'><h2>Vendor Self-Service</h2><p class='lead'>Reduce email follow-ups by giving vendor portal users a dedicated workspace for their Purchase Orders and invoice submissions.</p><div class='grid'>
-<div class='card'><h3>Smart First Login</h3><p>Vendor onboarding tracks the first portal visit so account details can be completed before the user moves into the normal vendor dashboard experience.</p></div>
-<div class='card'><h3>Vendor Dashboard</h3><p>Dedicated vendor home with invoice and status information relevant to the logged-in supplier.</p></div>
-<div class='card'><h3>Purchase Order Visibility</h3><p>Vendors can browse their Purchase Orders and open detailed order information without receiving backend access.</p></div>
-<div class='card'><h3>PO-linked Invoice Upload</h3><p>Upload an invoice document with vendor invoice number, date, amount and notes and associate it with the relevant Purchase Order.</p></div>
-<div class='card'><h3>Duplicate Invoice Protection</h3><p>A vendor invoice number is unique per vendor, helping prevent accidental duplicate submissions.</p></div>
-<div class='card'><h3>Review Workflow</h3><p>Track Submitted, Under Review, Approved and Rejected states. Internal reviewers can publish a review comment that the vendor sees in the portal.</p></div>
-<div class='card'><h3>Internal Review Activities</h3><p>New vendor submissions can schedule activities for authorized reviewer users, keeping the accounting follow-up visible inside Odoo.</p></div>
-<div class='card'><h3>Secure Attachments</h3><p>Invoice files are stored against the vendor invoice record and can be downloaded from the controlled workflow.</p></div>
-</div></section>
-<div class='footer'>Odoo 18 • Commercial OPL-1 License • Developed by Kinan</div>
-</div></body></html>
+<section class="container py-4">
+  <div class="text-center bg-light border rounded p-5 mb-5">
+    <h1 class="font-weight-bold mb-3" style="color:#3b2943;">Customer &amp; Vendor Portal Extension</h1>
+    <p class="lead text-muted mx-auto mb-4">A practical vendor-facing portal for Purchase Order visibility, invoice submission, review status and account onboarding without backend access.</p>
+    <div>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Vendor Portal</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Purchase Orders</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Invoice Upload</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Review Workflow</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Portal Security</span>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h2 class="text-center font-weight-bold mb-3" style="color:#3b2943;">Vendor Self-Service</h2>
+    <p class="text-center text-muted mb-4">Reduce email follow-ups by giving vendor portal users a dedicated workspace for their Purchase Orders and invoice submissions.</p>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Smart First Login</h3>
+          <p class="text-muted mb-0">Vendor onboarding tracks the first portal visit so account details can be completed before the user moves into the normal vendor dashboard experience.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Vendor Dashboard</h3>
+          <p class="text-muted mb-0">Dedicated vendor home with invoice and status information relevant to the logged-in supplier.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Purchase Order Visibility</h3>
+          <p class="text-muted mb-0">Vendors can browse their Purchase Orders and open detailed order information without receiving backend access.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">PO-linked Invoice Upload</h3>
+          <p class="text-muted mb-0">Upload an invoice document with vendor invoice number, date, amount and notes and associate it with the relevant Purchase Order.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Duplicate Invoice Protection</h3>
+          <p class="text-muted mb-0">A vendor invoice number is unique per vendor, helping prevent accidental duplicate submissions.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Review Workflow</h3>
+          <p class="text-muted mb-0">Track Submitted, Under Review, Approved and Rejected states. Internal reviewers can publish a review comment that the vendor sees in the portal.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Internal Review Activities</h3>
+          <p class="text-muted mb-0">New vendor submissions can schedule activities for authorized reviewer users, keeping the accounting follow-up visible inside Odoo.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Secure Attachments</h3>
+          <p class="text-muted mb-0">Invoice files are stored against the vendor invoice record and can be downloaded from the controlled workflow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center text-muted border-top pt-4 mt-5">Odoo 18 • Commercial OPL-1 License • Developed by Kinan</div>
+</section>
