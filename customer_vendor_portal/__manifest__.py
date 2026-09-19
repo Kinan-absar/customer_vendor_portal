@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': 'Customer & Vendor Portal Extension',
     'version': '2.0.0',
@@ -6,46 +5,14 @@
     'website': 'https://absar-alomran.com',
     'category': 'Portal',
     'summary': 'Professional vendor portal with smart onboarding, invoice tracking, and review comments.',
-    'description': """
-Customer & Vendor Portal Extension v2
-======================================
-
-Redesigned vendor portal with a professional UX for Odoo 18.
-
-Features:
----------
-- Smart first-login onboarding: vendors see account details only once, then go directly to dashboard
-- Vendor dashboard with live stats (total invoices, amounts by status)
-- Beautiful invoice list with status badges and progress tracker
-- Invoice detail page with review comments/notes visible to vendor
-- Drag-and-drop invoice upload form
-- Purchase Order list with detail view
-- Bilingual Support (English / Arabic)
-""",
-    'depends': [
-        'portal',
-        'website',
-        'purchase',
-        'sale',
-        'account',
-        'mail',
-    ],
-    'data': [
-        'security/security.xml',
-        'security/ir.model.access.csv',
-        'data/vendor_invoice_sequence.xml',
-        'views/vendor_invoice_views.xml',
-        'views/portal_vendor_menu.xml',
-        'views/portal_templates.xml',
-    ],
-    'assets': {
-        'web.assets_frontend': [
-            'customer_vendor_portal/static/src/css/vendor_portal.css',
-        ],
-    },
+    'description': '\nCustomer & Vendor Portal Extension v2\n======================================\n\nRedesigned vendor portal with a professional UX for Odoo 18.\n\nFeatures:\n---------\n- Smart first-login onboarding: vendors see account details only once, then go directly to dashboard\n- Vendor dashboard with live stats (total invoices, amounts by status)\n- Beautiful invoice list with status badges and progress tracker\n- Invoice detail page with review comments/notes visible to vendor\n- Drag-and-drop invoice upload form\n- Purchase Order list with detail view\n- Bilingual Support (English / Arabic)\n',
+    'depends': ['portal', 'website', 'purchase', 'sale', 'account', 'mail'],
+    'data': ['security/security.xml', 'security/ir.model.access.csv', 'data/vendor_invoice_sequence.xml', 'views/vendor_invoice_views.xml', 'views/portal_vendor_menu.xml', 'views/portal_templates.xml'],
+    'assets': {'web.assets_frontend': ['customer_vendor_portal/static/src/css/vendor_portal.css']},
     'installable': True,
     'application': False,
     'license': 'OPL-1',
     'price': 24.99,
     'currency': 'USD',
+    'images': ['images/main_screenshot.png'],
 }
